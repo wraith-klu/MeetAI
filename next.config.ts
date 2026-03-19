@@ -2,9 +2,7 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ["better-auth"],
-  },
+  serverExternalPackages: ["better-auth"],
 
   webpack: (config) => {
     config.resolve.alias = {
