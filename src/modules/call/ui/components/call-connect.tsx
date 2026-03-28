@@ -35,6 +35,7 @@ export const CallConnect = ({
     trpc.meetings.generateToken.mutationOptions(),
   );
 
+
   const [client, setClient] = useState<StreamVideoClient>();
 
   useEffect(() => {
